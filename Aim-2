@@ -1,0 +1,14 @@
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+
+local player = Players.LocalPlayer
+local mouse = player:GetMouse()
+
+RunService.RenderStepped:Connect(function()
+    local target = mouse.Hit
+    -- Perform calculations to aim at the target here
+    
+    -- Example code to aim at the target
+    player.Character.HumanoidRootPart.CFrame = CFrame.new(player.Character.HumanoidRootPart.Position, target.p)
+end)
+```
