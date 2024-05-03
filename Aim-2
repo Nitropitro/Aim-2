@@ -11,4 +11,3 @@ RunService.RenderStepped:Connect(function()
     -- Example code to aim at the target
     player.Character.HumanoidRootPart.CFrame = CFrame.new(player.Character.HumanoidRootPart.Position, target.p)
 end)
-```
